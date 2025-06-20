@@ -1,5 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head><title>TimeToBite</title></head>
-<body><h1>Coming Soon...</h1></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeToBite</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>TimeToBite</h1>
+    <button id="login-btn">Login / Guest</button>
+  </header>
+
+  <section class="search-section">
+    <input type="text" id="zip-input" placeholder="Enter ZIP code">
+    <button id="search-zip">Search</button>
+    <button id="use-gps">📍 Use My Location</button>
+    <select id="category-filter">
+      <option value="">All Categories</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Burgers">Burgers</option>
+      <option value="South Indian">South Indian</option>
+    </select>
+  </section>
+
+  <section id="merchant-list" class="card-grid">
+    <!-- Skeletons will load first -->
+  </section>
+
+  <script src="/assets/js/firebase-init.js" type="module"></script>
+  <script src="/assets/js/db.js" type="module"></script>
+  <script src="/assets/js/utils.js" type="module"></script>
+  <script src="/assets/js/index.js" type="module"></script>
+</body>
 </html>
