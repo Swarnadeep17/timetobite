@@ -1,7 +1,10 @@
 {
   "hosting": {
+    "site": "timetobite-633d8",
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ]
   }
 }
